@@ -1,0 +1,34 @@
+{
+  "name": "monorepo-npm",
+  "version": "1.0.0",
+  "description": "express & react monorepo using npm workplaces",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "concurrently \"npm run dev -w @monorepo-npm/shared\" \"npm run dev -w @monorepo-npm/backend\" \"npm run dev -w @my-monorepo/frontend\"",
+    "clean": "npm run clean --workspaces --if-present",
+    "build:shared": "npm run build -w @monorepo-npm/shared",
+    "build:backend": "npm run build -w @monorepo-npm/backend",
+    "build:frontend": "npm run build -w @monorepo-npm/frontend",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasushi-mo/monorepo-npm.git"
+  },
+  "author": "yasushi-mo",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yasushi-mo/monorepo-npm/issues"
+  },
+  "homepage": "https://github.com/yasushi-mo/monorepo-npm#readme",
+  "engines": {
+    "node": ">=22.18.0",
+    "npm": ">=11.5.2"
+  }
+}
