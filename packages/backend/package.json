@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo-npm/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@monorepo-npm/shared": "*",
+    "express": "^5.1.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/cors": "^2.8.0",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
