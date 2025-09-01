@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { User, ApiResponse } from "@monorepo-npm/shared";
+import type { User, ApiResponse } from "@monorepo-npm/shared";
 
 const App: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);

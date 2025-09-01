@@ -1,6 +1,7 @@
-import express, { Express, Request, Response } from "express";
+import express from "express";
+import type { Express, Request, Response } from "express";
 import cors from "cors";
-import { User, ApiResponse } from "@monorepo-npm/shared";
+import type { User, ApiResponse } from "@monorepo-npm/shared";
 
 const app: Express = express();
 const port = process.env.PORT || 3001;
