@@ -7,6 +7,9 @@ packages/*/dist/
 packages/*/build/
 shared/dist/
 
+# TypeScript
+*.tsbuildinfo
+
 # .env
 .env
 .env.local
