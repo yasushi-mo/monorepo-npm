@@ -27,11 +27,12 @@
     "url": "https://github.com/yasushi-mo/monorepo-npm/issues"
   },
   "homepage": "https://github.com/yasushi-mo/monorepo-npm#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.2"
+  },
   "engines": {
     "node": ">=22.18.0",
     "npm": ">=11.5.2"
-  },
-  "devDependencies": {
-    "concurrently": "^9.2.1"
   }
 }
