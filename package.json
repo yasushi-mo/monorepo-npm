@@ -1,6 +1,7 @@
 {
   "name": "monorepo-npm",
   "version": "1.0.0",
+  "type": "module",
   "description": "express & react monorepo using npm workplaces",
   "private": true,
   "workspaces": [
@@ -22,7 +23,6 @@
   },
   "author": "yasushi-mo",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/yasushi-mo/monorepo-npm/issues"
   },
