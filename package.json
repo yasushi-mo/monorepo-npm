@@ -15,7 +15,9 @@
     "build:shared": "npm run build -w @monorepo-npm/shared",
     "build:backend": "npm run build -w @monorepo-npm/backend",
     "build:frontend": "npm run build -w @monorepo-npm/frontend",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test && npm run test:e2e"
   },
   "repository": {
     "type": "git",

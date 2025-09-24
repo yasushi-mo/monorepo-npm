@@ -14,3 +14,6 @@ shared/dist/
 .env
 .env.local
 .env.*.local
+
+# Playwright
+playwright-report
